@@ -1,58 +1,65 @@
-html{
-    height: 100%;
+html {
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #403075;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #403075;
 }
 .piano {
-    display: flex;
-    position: relative;
-    margin-left: 4px;
+  display: flex;
+  position: relative;
+  margin-left: 4px;
 }
-.white-key{
-    width: 60px;
-    height: 200px;
-    background-color: #fff;
-    border: 4px solid black;
-    border-radius: 0 0 6px 6px;
-    margin-left: -4px;
-    cursor: pointer;
+.white-key {
+  width: 60px;
+  height: 200px;
+  background-color: #fff;
+  border: 4px solid black;
+  border-radius: 0 0 6px 6px;
+  margin-left: -4px;
+  cursor: pointer;
+}
+.white-key.active {
+  background-color: #c0c0c0;
 }
 
 .black-key {
-    position: absolute;
-    width: 30px;
-    height: 120px;
-    background-color: black;
-    border-radius: 0 0 2px 2px;
-    outline: none;
-    cursor: pointer;
+  position: absolute;
+  width: 30px;
+  height: 120px;
+  background-color: black;
+  border-radius: 0 0 2px 2px;
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+.black-key.active {
+  background-image: linear-gradient(#000000, #101010);
 }
 .Db4-key {
-    left: 38px;
+  left: 38px;
 }
 .Eb4-key {
-    left: 96px;
+  left: 96px;
 }
 .Gb4-key {
-    left: 208px;
+  left: 208px;
 }
 .Ab4-key {
-    left: 264px;
+  left: 264px;
 }
 .Bb4-key {
-    left: 320px;
+  left: 320px;
 }
 .Db5-key {
-    left: 430px;
+  left: 430px;
 }
 .Eb5-key {
-    left: 488px;
+  left: 488px;
 }
